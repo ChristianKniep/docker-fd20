@@ -7,5 +7,5 @@ RUN chmod u+s /usr/bin/ping
 RUN chmod u+s /bin/ping
 RUN ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
-RUN yum update -y -x systemd -x systemd-libs
+RUN yum update -y -x systemd -x systemd-libs -x iputils
 RUN yum install -y wget 
