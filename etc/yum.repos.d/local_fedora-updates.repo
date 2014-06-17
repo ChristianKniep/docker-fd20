@@ -1,0 +1,8 @@
+[local_updates]
+name=Local fedora20 updates repository
+baseurl=http://172.17.42.1:81/repo/fedora/20/updates
+priority=1
+skip_if_unavailable=true
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+enabled=1

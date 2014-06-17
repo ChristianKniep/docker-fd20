@@ -1,0 +1,7 @@
+[local_fedora]
+name=Local fedora20 repository
+baseurl=http://172.17.42.1:81/repo/fedora/20/fedora
+priority=1
+skip_if_unavailable=true
+gpgcheck=0
+enabled=1
