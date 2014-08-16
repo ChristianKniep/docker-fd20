@@ -1,7 +1,8 @@
 [fedora]
 name=Fedora $releasever - $basearch
 failovermethod=priority
-baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/
+#baseurl=http://download.fedoraproject.org/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
 priority=2
 skip_if_unavailable=true
 retries=1
