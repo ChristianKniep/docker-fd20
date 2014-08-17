@@ -10,6 +10,7 @@ ADD etc/yum.repos.d/local_fedora.repo /etc/yum.repos.d/
 ADD etc/yum.repos.d/local_fedora-updates.repo /etc/yum.repos.d/
 ADD etc/yum.repos.d/fedora.repo /etc/yum.repos.d/fedora.repo
 ADD etc/yum.repos.d/fedora-updates.repo /etc/yum.repos.d/fedora-updates.repo
+ADD etc/yum.repos.d/qnib.repo /etc/yum.repos.d/qnib.repo
 ADD etc/yum.conf /etc/yum.conf
 RUN echo "2014-08-04";yum clean all
 
