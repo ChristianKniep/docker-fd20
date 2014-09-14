@@ -1,13 +1,13 @@
 ###### Updated version of fedora (20)
-FROM fedora
+FROM fedora:20
 MAINTAINER "Christian Kniep <christian@qnib.org>"
 
 # Solution for 'ping: icmp open socket: Operation not permitted'
 RUN ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
 RUN rm -f /etc/yum.repos.d/*
-ADD etc/yum.repos.d/local_fedora.repo /etc/yum.repos.d/
-ADD etc/yum.repos.d/local_fedora-updates.repo /etc/yum.repos.d/
+#ADD etc/yum.repos.d/local_fedora.repo /etc/yum.repos.d/
+#ADD etc/yum.repos.d/local_fedora-updates.repo /etc/yum.repos.d/
 ADD etc/yum.repos.d/fedora.repo /etc/yum.repos.d/fedora.repo
 ADD etc/yum.repos.d/fedora-updates.repo /etc/yum.repos.d/fedora-updates.repo
 ADD etc/yum.repos.d/qnib.repo /etc/yum.repos.d/qnib.repo
